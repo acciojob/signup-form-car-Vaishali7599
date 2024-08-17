@@ -14,14 +14,17 @@
 		<label for="email">Email</label>
 		<input type="text" id="email" name="email" placeholder="Email" required><br>
 
-		<label for="gender_m">Male</label>
-		<input type="radio" id="gender_m" name="male" required>
+		
+		<input type="radio" id="male" name="gender" value="male" required>
+		<label for="male">Male</label><br>
 
-		<label for="gender_f">Female</label>
-		<input type="radio" id="gender_f" name="female" required><br>
+		
+		<input type="radio" id="female" name="gender" value="famale" required>
+		<label for="female">Female</label><br>
 
 		<label for="cars">Car Brands</label>
-		<select id="cars" name="cars" placeholder="Please choose an option" required>
+		<select id="cars" required>
+			<option value="placeholder">--Please choose an option--</option>
 			<option value="Honda">Honda</option>
 			<option value="lambo">lambo</option>
 			<option value="frari">frari</option>
@@ -38,11 +41,13 @@
 		<input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx"><br>
 
 		<label for="password">Password</label><br>
-		<input type="text" id="password" name="npassword" placeholder="password" required><br>
+		<input type="text" id="password" placeholder="password" required><br>
 
-		
-		<input type="checkbox" id="tos" name="tos" required>
 		<label for="tos">I agree to the TOS</label>
+		<input type="checkbox" id="tos" required>
+
+		<button type="submit">Submit</button>
+		
 	</form>
 
 
